@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="level">
+    <div class="level-left">
+        <h1 class="title">Personel Listesi</h1>
+    </div>
+    <div class="level-right">
+        <a href="/personel/ekle" class="button is-primary">
+            <span class="icon">
+                <i class="fas fa-plus"></i>
+            </span>
+            <span>Yeni Personel Ekle</span>
+        </a>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column">
+        <div class="field">
+            <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="Personel Ara...">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="column is-3">
+        <div class="field">
+            <div class="control">
+                <div class="select is-fullwidth">
+                    <select>
+                        <option>Tüm Pozisyonlar</option>
+                        <option>Yazılım Geliştirici</option>
+                        <option>İK Uzmanı</option>
+                        <option>Muhasebe</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-content">
+        <table class="table is-fullwidth">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ad Soyad</th>
+                    <th>Pozisyon</th>
+                    <th>Maaş</th>
+                    <th>İşe Başlama</th>
+                    <th>Durum</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ahmet Yılmaz</td>
+                    <td>Yazılım Geliştirici</td>
+                    <td>₺12,000</td>
+                    <td>01.01.2024</td>
+                    <td><span class="tag is-success">Aktif</span></td>
+                    <td>
+                        <div class="buttons">
+                            <a href="/personel/duzenle/1" class="button is-small is-info">
+                                <span class="icon">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                            <button class="button is-small is-danger">
+                                <span class="icon">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ayşe Demir</td>
+                    <td>İK Uzmanı</td>
+                    <td>₺9,500</td>
+                    <td>15.12.2023</td>
+                    <td><span class="tag is-success">Aktif</span></td>
+                    <td>
+                        <div class="buttons">
+                            <a href="/personel/duzenle/2" class="button is-small is-info">
+                                <span class="icon">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                            <button class="button is-small is-danger">
+                                <span class="icon">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %} 

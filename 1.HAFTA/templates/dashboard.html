@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="columns">
+    <div class="column">
+        <div class="card">
+            <div class="card-content">
+                <p class="title is-4">Toplam Personel</p>
+                <p class="subtitle is-6">25</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-content">
+                <p class="title is-4">Aktif Personel</p>
+                <p class="subtitle is-6">23</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-content">
+                <p class="title is-4">Ortalama Maaş</p>
+                <p class="subtitle is-6">₺8,500</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="columns mt-4">
+    <div class="column">
+        <div class="card">
+            <div class="card-header">
+                <p class="card-header-title">Son Eklenen Personel</p>
+            </div>
+            <div class="card-content">
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Ad Soyad</th>
+                            <th>Pozisyon</th>
+                            <th>İşe Başlama</th>
+                            <th>Durum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmet Yılmaz</td>
+                            <td>Yazılım Geliştirici</td>
+                            <td>01.01.2024</td>
+                            <td><span class="tag is-success">Aktif</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ayşe Demir</td>
+                            <td>İK Uzmanı</td>
+                            <td>15.12.2023</td>
+                            <td><span class="tag is-success">Aktif</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
